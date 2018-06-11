@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formularz - localStorage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div class="wrapper">
+		<form id="formData" action="#">
+			<div class="part">
+				<h1>Dane Klienta</h1>
+				imię <br>
+				<input name="clientName" type="text"> <br>
+				nazwisko <br>
+				<input name="clientLastName" type="text"> <br>
+				ulica <br>
+				<input name="clientStreet" type="text"> <br>
+				miasto <br>
+				<input name="clientCity" type="text"> <br>
+				kod <br>
+				<input name="clientCode" type="text"> <br>
+
+			</div>
+			<div class="part">
+				<h1>Dane Firmy</h1>
+				nazwa <br>
+				<input name="companyName" type="text"> <br>
+				ulica <br>
+				<input name="companyStreet" type="text"> <br>
+				miasto <br>
+				<input name="companyCity" type="text"> <br>
+				kod <br>
+				<input name="companyCode" type="text"> <br>
+				NIP <br>
+				<input name="companyNip" type="text"> <br>
+
+			</div>
+			<div class="part">
+				<h1>Kwota</h1>
+				Kwota <br>
+				<input name="amount" type="text"> <br>
+
+			</div>
+			<div class="part">
+				<h1>Dane dotyczące faktury</h1>
+				<input type="radio" name="invoice" value="wystawiona">wystawiona<br>
+				<input type="radio" name="invoice" value="doręczona">doręczona<br>
+				<input type="radio" name="invoice" value="opłacona">opłacona<br>
+				<input type="radio" name="invoice" value="spóźniona">spóźniona<br>
+
+			</div>
+		</form>
+		<p>Ostatnia aktualizacja: </p>
+		<div id="lastSave"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
