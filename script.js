@@ -7,11 +7,11 @@ const invoice = form.querySelectorAll('input[name="invoice"]');
 const credentialsLng = credentials.length;
 const invoiceLength = form.invoice.length;
 
-// callback function - changing any item in the credentials form calls changeData function
+// changing of any item in the credentials form calls changeData function
 credentials.forEach(function (elem) {
 	elem.addEventListener("change", changeData);
 });
-// callback function - changing any item in the invoice form calls the changeInvoice function
+// changing of any item in the invoice form calls the changeInvoice function
 invoice.forEach(function (elem) {
 	elem.addEventListener("change", changeInvoice);
 });
